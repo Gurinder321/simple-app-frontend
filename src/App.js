@@ -4,7 +4,7 @@ import Edit from './components/EditTask';
 import { useState, useEffect } from 'react';
 
 function App() {
-  const base_url = `http://127.0.0.1:8800`;
+  const base_url = `process.env.REACT_APP_BACKEND_URL`;
   const [tasks, setTasks] = useState([]);
   const [update, setUpdate] = useState({}); // task and task_id
   /**

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-const base_url = `http://127.0.0.1:8800`;
+const base_url = `process.env.REACT_APP_BACKEND_URL`;
 const Edit = ({ update, setUpdate, getTasks }) => {
   const [update_text, set_update_text] = useState('');
   //   component mounting
